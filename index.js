@@ -1,4 +1,5 @@
 import "dotenv/config";
+import cors from "cors";
 import express from "express";
 import mongoose from "mongoose";
 
@@ -8,6 +9,9 @@ const PORT = process.env.PORT || 3000;
 const DB_URL = process.env.DB_URL;
 
 const app = express();
+
+// TODO: ADD WHITELIST DOMAINS
+app.use(cors());
 
 app.use(express.json());
 app.use("/api", router);
