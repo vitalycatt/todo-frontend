@@ -22,7 +22,7 @@ npm install
 
 3. Создать файл .env в корне проекта:
 PORT=3001
-MONGODB_URI=mongodb://localhost:27017/tododb
+DB_URL=mongodb://localhost:27017/tododb
 
 ## DEV mode: npm run dev
 ## PROD mode: npm start
