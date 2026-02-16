@@ -18,11 +18,11 @@ app.use("/api", router);
 
 async function startApp() {
   try {
-    console.log("Connecting to DB...");
-    await mongoose.connect(DB_URL, {
-      serverSelectionTimeoutMS: 5000,
-    });
-    console.log("DB connected");
+    mongoose
+      .connect(DB_URL)
+      .then(() => console.log("✅ Connected to MongoDB"))
+      .catch((err) => console.error("❌ MongoDB connection error:", err));
+
     app.listen(PORT, () =>
       console.log(`Now app available at the ${PORT} port`),
     );
