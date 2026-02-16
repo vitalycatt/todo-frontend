@@ -13,7 +13,7 @@ REST API для управления задачами на **Node.js + Express +
 
 1. Клонировать репозиторий:
 
-```bash
+````bash
 git clone https://github.com/username/todo-app.git
 cd todo-app
 
@@ -26,6 +26,15 @@ DB_URL=mongodb://localhost:27017/tododb
 
 ## DEV mode: npm run dev
 ## PROD mode: npm start
+
+## DOCKER SETUP
+
+- Docker 20.10+
+- Docker Compose 2.0+
+
+```bash
+docker --version
+docker compose version
 
 ## STRUCTURE
 ├── app.js                 # Точка входа, настройка Express
@@ -44,4 +53,4 @@ DB_URL=mongodb://localhost:27017/tododb
 | `POST`  | `/api/todos`     | Создать задачу         |
 | `PATCH` | `/api/todos/:id` | Обновить задачу        |
 | `DELETE`| `/api/todos/:id` | Удалить задачу         |
-```
+````

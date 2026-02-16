@@ -14,6 +14,15 @@ npm i
 npm run dev
 ```
 
+## DOCKER SETUP
+
+- Docker 20.10+
+- Docker Compose 2.0+
+
+```bash
+docker --version
+docker compose version
+
 ## STACK
 
 - Vite
@@ -80,3 +89,4 @@ export type TaskEditorState =
 | { type: 'idle' } // режим просмотра
 | { type: 'creating'; draft: TaskFormData } // создание новой
 | { type: 'editing'; id: string; draft: TaskFormData }; // редактирование существующей
+```

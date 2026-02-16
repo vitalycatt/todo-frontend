@@ -10,6 +10,9 @@ pnpm-lock.yaml
 .env.production
 .env.development
 
+# Docker override (личные настройки)
+docker-compose.override.yml
+
 # Логи
 npm-debug.log*
 yarn-debug.log*

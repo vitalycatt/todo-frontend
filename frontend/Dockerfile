@@ -1,5 +1,3 @@
-# frontend/Dockerfile
-
 # Этап 1: Сборка приложения
 FROM node:18-alpine AS builder
 
